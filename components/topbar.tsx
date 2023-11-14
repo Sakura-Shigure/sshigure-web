@@ -38,7 +38,27 @@ export const Topbar = () => {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen}>
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      isMenuOpen={isMenuOpen}
+      classNames={{
+        item: [
+          "flex",
+          "relative",
+          "h-full",
+          "items-center",
+          "data-[active=true]:after:content-['']",
+          "data-[active=true]:after:absolute",
+          "data-[active=true]:after:bottom-4",
+          "data-[active=true]:after:left-0",
+          "data-[active=true]:after:right-0",
+          "data-[active=true]:after:h-[2px]",
+          "data-[active=true]:after:rounded-[2px]",
+          "data-[active=true]:after:bg-primary",
+          "data-[active=true]:font-normal",
+        ],
+      }}
+    >
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="sm:hidden"
@@ -50,7 +70,11 @@ export const Topbar = () => {
       </NavbarBrand>{" "}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {topbarItems.map((data, i) => (
-          <NavbarItem key={i} isActive={data.pathname === currentPathName[1]}>
+          <NavbarItem
+            className="font-normal"
+            key={i}
+            isActive={data.pathname === currentPathName[1]}
+          >
             <Link href={data.pathname === "" ? "/" : data.pathname}>
               {data.name}
             </Link>

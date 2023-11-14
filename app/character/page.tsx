@@ -28,7 +28,7 @@ export default function Character() {
       <Spacer y={4} />
       {image(
         "/oc/character.webp",
-        "人物設定有兩個角色: 看板娘小女孩及皇冠史萊姆"
+        "設定上有兩個角色，分別為看板娘小女孩及皇冠史萊姆"
       )}
       <Divider className="my-4" />
       <Spacer y={4} />
