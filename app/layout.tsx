@@ -30,7 +30,7 @@ export default function RootLayout({
       <head />
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "custom" }}>
-          <div className="relative flex flex-col min-h-screen">
+          <div className="relative flex flex-col md:min-h-screen min-h-full">
             <Topbar />
             <main className="container mx-auto max-w-3xl pt-7 px-6 flex-grow">
               {children}
@@ -38,8 +38,7 @@ export default function RootLayout({
             <footer
               className={`w-full flex items-center justify-center py-3 ${fontSans.className}`}
             >
-              <span className="text-default-600">Powered by</span>
-              <p className="text-primary">Sakura Shigure</p>
+              <p className="text-default-400">Made by Sakura Shigure</p>
             </footer>
           </div>
         </Providers>

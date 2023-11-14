@@ -21,6 +21,7 @@ import {
 import { DiscordIcon, TwitterIcon } from "./icons";
 import { fontSans } from "@/config/fonts";
 import { useState } from "react";
+import { delay } from "framer-motion";
 
 interface TopbarItemModel {
   name: string;
@@ -114,7 +115,7 @@ export const Topbar = () => {
               className="w-full"
               href={data.pathname === "" ? "/" : data.pathname}
               size="lg"
-              onPress={() => setIsMenuOpen(false)}
+              onPress={() => delay(() => setIsMenuOpen(false), 100)}
             >
               {data.name}
             </Link>
