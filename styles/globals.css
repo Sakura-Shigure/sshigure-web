@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+  margin-top: 0.5rem;
+  /* 8px */
+  margin-bottom: 0.5rem;
+  /* 8px */
+}

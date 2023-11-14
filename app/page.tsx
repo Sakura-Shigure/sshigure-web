@@ -1,51 +1,35 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { Image, Spacer } from "@nextui-org/react";
 
 export default function Home() {
-	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
-			</div>
-
-			<div className="flex gap-3">
-				<Link
-					isExternal
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
-			</div>
-
-			<div className="mt-8">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
-					</span>
-				</Snippet>
-			</div>
-		</section>
-	);
+  return (
+    <>
+      <div className="h-fit grid grid-cols-3">
+        <div className="col-span-1 flex flex-col">
+          <div>
+            <Image src="/oc/logo.webp" alt=""></Image>
+          </div>
+          <Spacer y={4} />
+          <div className="flex-1">
+            <p className="md:text-3xl text-xl">我是櫻餅</p>
+            <Spacer y={1} />
+            <p className="md:text-lg text-xs">
+              接受純靜態網站委託
+              <br />
+              及Discord客製機器人
+              <br />
+              或是其他軟體需求
+              <br />
+              也可詢問
+            </p>
+          </div>
+          <div className="align-bottom">
+            <Image src="/oc/slime.webp" alt=""></Image>
+          </div>
+        </div>
+        <div className="col-span-2">
+          <Image src="/oc/portrait.webp" alt=""></Image>
+        </div>
+      </div>
+    </>
+  );
 }
