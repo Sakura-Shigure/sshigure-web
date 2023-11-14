@@ -34,7 +34,7 @@ export const Topbar = () => {
   const topbarItems: TopbarItemModel[] = [
     { name: "關於", pathname: "" },
     { name: "人物設定", pathname: "character" },
-    { name: "委託圖", pathname: "galley" },
+    { name: "委託圖", pathname: "gallery" },
   ];
 
   return (
