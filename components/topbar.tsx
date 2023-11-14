@@ -31,8 +31,6 @@ export const Topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   let currentPathName = usePathname().split("/");
 
-  console.log(currentPathName);
-
   const topbarItems: TopbarItemModel[] = [
     { name: "關於", pathname: "" },
     { name: "人物設定", pathname: "character" },
@@ -40,7 +38,7 @@ export const Topbar = () => {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen}>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="sm:hidden"
@@ -92,6 +90,7 @@ export const Topbar = () => {
               className="w-full"
               href={data.pathname === "" ? "/" : data.pathname}
               size="lg"
+              onPress={() => setIsMenuOpen(false)}
             >
               {data.name}
             </Link>
