@@ -18,7 +18,7 @@ export default function Character() {
   );
   return (
     <>
-      <p className="md:text-base text-sm whitespace-pre">
+      <p className="md:text-base text-sm">
         從前有一隻戴著皇冠的史萊姆，它在森林裡孤單地生活著。
         <br />
         某天，一個可愛的小女孩發現了這隻史萊姆，她覺得史萊姆覺得很好玩，決定將他帶回家。

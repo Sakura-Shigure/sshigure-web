@@ -30,7 +30,7 @@ export default function RootLayout({
       <head />
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "custom" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col min-h-screen">
             <Topbar />
             <main className="container mx-auto max-w-3xl pt-7 px-6 flex-grow">
               {children}
