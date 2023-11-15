@@ -8,15 +8,20 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sakurashigure.com"),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: ["時雨櫻", "SakuraShigure", "Sakura Shigure"],
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    images: "/apple-touch-icon.png",
   },
 };
 
