@@ -19,7 +19,6 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import { DiscordIcon, TwitterIcon } from "./icons";
-import { fontSans } from "@/config/fonts";
 import { useState } from "react";
 import { delay } from "framer-motion";
 
@@ -33,9 +32,11 @@ export const Topbar = () => {
   let currentPathName = usePathname().split("/");
 
   const topbarItems: TopbarItemModel[] = [
-    { name: "關於", pathname: "" },
+    { name: "首頁", pathname: "" },
     { name: "人物設定", pathname: "character" },
-    { name: "委託圖", pathname: "gallery" },
+    { name: "圖庫", pathname: "gallery" },
+    { name: "私心推薦", pathname: "recommend" },
+    { name: "關於", pathname: "about" },
   ];
 
   return (
@@ -97,7 +98,7 @@ export const Topbar = () => {
             </PopoverContent>
           </Popover>
           <Tooltip content="@SakuraShigure99" delay={500}>
-            <Link href="https://twitter.com/SakuraShigure99">
+            <Link isExternal href="https://twitter.com/SakuraShigure99">
               <Button color="primary" radius="lg" variant="light" isIconOnly>
                 <TwitterIcon />
               </Button>

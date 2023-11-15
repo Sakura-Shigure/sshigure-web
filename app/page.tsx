@@ -1,3 +1,4 @@
+import { subtitle, title } from "@/components/primitives";
 import { Image, Spacer } from "@nextui-org/react";
 
 export default function Home() {
@@ -20,6 +21,11 @@ export default function Home() {
               或是其他軟體需求
               <br />
               也可詢問
+              <br />
+              <br />
+              在各實況台遊歷
+              <br />
+              希望能找到自己能做的事
             </p>
           </div>
           <div className="align-bottom">

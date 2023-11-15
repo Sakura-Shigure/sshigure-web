@@ -38,7 +38,9 @@ export default function RootLayout({
             <footer
               className={`w-full flex items-center justify-center py-3 ${fontSans.className}`}
             >
-              <p className="text-default-400">Made by Sakura Shigure</p>
+              <p className="text-default-400">
+                Made by Sakura Shigure © {new Date().getFullYear()}
+              </p>
             </footer>
           </div>
         </Providers>
@@ -46,7 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-function localFont(arg0: { src: string }) {
-  throw new Error("Function not implemented.");
-}
-
