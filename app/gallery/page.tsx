@@ -9,18 +9,20 @@ interface ImageModel {
 
 export default function Gallery() {
   const emoteImages: ImageModel[] = [
-    { filename: "sakura_FBI.webp", tooltip: "by 修更" },
-    { filename: "sakura_Lay.webp", tooltip: "by 修更" },
+    { filename: "sakura_Hiii.webp", tooltip: "by 糜咔咔" },
     { filename: "sakura_Loading.webp", tooltip: "by 糜咔咔" },
-    { filename: "sakura_NotLikeThis.webp", tooltip: "by QB" },
-    { filename: "sakura_OFace.webp", tooltip: "by 水漾" },
     { filename: "sakura_Plz.webp", tooltip: "by 糜咔咔" },
     { filename: "sakura_Point.webp", tooltip: "by 糜咔咔" },
-    { filename: "sakura_SB.webp", tooltip: "by 嵐洛" },
+    { filename: "sakura_FBI.webp", tooltip: "by 修更" },
+    { filename: "sakura_Lay.webp", tooltip: "by 修更" },
     { filename: "sakura_UCCU.webp", tooltip: "by 修更" },
+    { filename: "sakura_Button.webp", tooltip: "by 希露芬" },
+    { filename: "sakura_NotLikeThis.webp", tooltip: "by QB" },
     { filename: "sakura_Watermelon.webp", tooltip: "by 菜菜" },
+    { filename: "sakura_SB.webp", tooltip: "by 嵐洛" },
+    { filename: "sakura_OFace.webp", tooltip: "by 水漾" },
     { filename: "sakura_What.webp", tooltip: "by 青歲" },
-    { filename: "sakura_love.webp", tooltip: "by 桃星莉莉" },
+    { filename: "sakura_Love.webp", tooltip: "by 桃星莉莉" },
   ];
   const illustrationImages: ImageModel[] = [
     { filename: "1.webp", tooltip: "by 白詰草" },
