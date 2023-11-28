@@ -24,12 +24,18 @@ export default function Recommend() {
     {
       name: "奶加",
       twitterId: "hellojoyin",
+      twitchId: "nanakyuu301",
       link: "https://nanakyuu.com/",
     },
     {
+      name: "水漾漾漾漾",
+      twitterId: "shuiyang_0730",
+      twitchId: "shuiyangyang",
+    },
+    {
       name: "糜咔咔",
-      twitterId: "mica1130",
-      twitchId: "mica_1130",
+      twitterId: "mica_1130",
+      twitchId: "mica1130",
     },
     {
       name: "修更シル",
@@ -43,17 +49,20 @@ export default function Recommend() {
   ];
   const recommendStreamer: Profile[] = [
     {
-      name: "奶加",
-      twitterId: "hellojoyin",
-      twitchId: "nanakyuu301",
-    },
-    {
       name: "穆夏夏",
       twitchId: "musha0324",
     },
     {
       name: "自然",
       twitchId: "yb57152",
+    },
+    {
+      name: "望結",
+      twitchId: "miyusama0214",
+    },
+    {
+      name: "有米米",
+      twitchId: "yomi_cc",
     },
     {
       name: "紅茶拿鐵だよ",

@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@nextui-org/link";
+import { Link, LinkIcon } from "@nextui-org/link";
 import { usePathname } from "next/navigation";
 import {
   Popover,
@@ -93,7 +93,16 @@ export const Topbar = () => {
             </PopoverTrigger>
             <PopoverContent>
               <div className="px-1 py-2">
-                <div className="text-small">@sakurashigure</div>
+                <div className="text-small align-top">@sakurashigure</div>
+                <Link
+                  className="pt-1"
+                  size="sm"
+                  isExternal
+                  href="https://discord.gg/VNq2pTuSMx"
+                >
+                  伺服器連結
+                  <LinkIcon />
+                </Link>
               </div>
             </PopoverContent>
           </Popover>
