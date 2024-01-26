@@ -98,7 +98,7 @@ export const Topbar = () => {
                   className="pt-1"
                   size="sm"
                   isExternal
-                  href="https://discord.gg/VNq2pTuSMx"
+                  href="https://discord.gg/HGpUvyMgnC"
                 >
                   伺服器連結
                   <LinkIcon />
