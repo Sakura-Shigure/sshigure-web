@@ -22,12 +22,6 @@ interface Profile {
 export default function Recommend() {
   const recommendIllustrator: Profile[] = [
     {
-      name: "奶加",
-      twitterId: "hellojoyin",
-      twitchId: "nanakyuu301",
-      link: "https://nanakyuu.com/",
-    },
-    {
       name: "水漾漾漾漾",
       twitterId: "shuiyang_0730",
       twitchId: "shuiyangyang",
@@ -38,27 +32,22 @@ export default function Recommend() {
       twitchId: "mica1130",
     },
     {
-      name: "修更シル",
-      twitterId: "wwemndy",
-      twitchId: "wwemndy",
-    },
-    {
       name: "白詰草",
       twitterId: "Rain76418135",
+    },
+    {
+      name: "春春",
+      twitchId: "chun2_",
     },
   ];
   const recommendStreamer: Profile[] = [
     {
-      name: "穆夏夏",
-      twitchId: "musha0324",
+      name: "水縹そまる",
+      youtube: "https://www.youtube.com/channel/UC3rmrlimhWzTsJ1BxY6-p1w",
     },
     {
       name: "自然",
       twitchId: "yb57152",
-    },
-    {
-      name: "望結",
-      twitchId: "miyusama0214",
     },
     {
       name: "有米米",
@@ -67,10 +56,6 @@ export default function Recommend() {
     {
       name: "紅茶拿鐵だよ",
       twitchId: "latteda_",
-    },
-    {
-      name: "熊七",
-      twitchId: "kuma7owo",
     },
     {
       name: "貓又飯糰",
